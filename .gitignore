@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.DS_Store
+.pytest_cache/
+# outputs of the examples
+quickstart.png
+own_data_effects.csv
+own_data_effects.png
+# outputs of a full recomputation (README, section 4.3)
+my_results/
+my_figures/

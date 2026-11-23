@@ -1,0 +1,26 @@
+{
+ "scenario1_n800": {
+  "reps": 8,
+  "l2_resolution": 0.02693910746596072
+ },
+ "scenario2_n800": {
+  "reps": 8,
+  "l2_resolution": 0.030439080804054903
+ },
+ "scenario3_n800": {
+  "reps": 8,
+  "l2_resolution": 0.043683236959777036
+ },
+ "scenario4_n800": {
+  "reps": 8,
+  "l2_resolution": 0.03575134738515217
+ },
+ "scenario5_n800": {
+  "reps": 8,
+  "l2_resolution": 0.025611607020014665
+ },
+ "scenario1_n3200": {
+  "reps": 4,
+  "l2_resolution": 0.026727921074277572
+ }
+}

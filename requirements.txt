@@ -1,0 +1,5 @@
+# Everything needed to run the estimators, the examples, the simulations
+# and the figures. Install with:  pip install -r requirements.txt
+numpy>=2.0
+matplotlib>=3.7
+pytest>=7

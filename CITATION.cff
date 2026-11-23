@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "shape-preserving-effects: elastic treatment effects for functional outcomes"
+version: 1.0.0
+license: AGPL-3.0-only
+repository-code: "https://github.com/agathe-chabassier/shape-preserving-effects"
+authors:
+  - family-names: Chabassier
+    given-names: Agathe
+    email: agathe.chabassier@hotmail.fr
+    affiliation: "Withings; Inria, PreMeDICaL team, IDESP (UMR Université de Montpellier - Inserm); Sorbonne Université (LPSM)"
+preferred-citation:
+  type: article
+  title: "Shape-Preserving Treatment Effects for Functional Outcomes"
+  authors:
+    - family-names: Chabassier
+      given-names: Agathe
+      affiliation: "Withings; Inria, PreMeDICaL team, IDESP (UMR Université de Montpellier - Inserm); Sorbonne Université (LPSM)"
+    - family-names: Olivier
+      given-names: Joris
+      affiliation: Withings
+    - family-names: Josse
+      given-names: Julie
+      affiliation: "Inria, PreMeDICaL team, IDESP (UMR Université de Montpellier - Inserm)"
+    - family-names: Scornet
+      given-names: Erwan
+      affiliation: "Sorbonne Université (LPSM)"
+  year: 2026
+  url: "https://hal.science/hal-05838408"

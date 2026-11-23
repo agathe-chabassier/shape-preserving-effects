@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shape-preserving-effects"
+version = "1.0.0"
+description = "Shape-preserving treatment effects for functional outcomes: populational and local elastic causal effects"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE"]
+authors = [{ name = "Agathe Chabassier", email = "agathe.chabassier@hotmail.fr" }]
+maintainers = [{ name = "Agathe Chabassier", email = "agathe.chabassier@hotmail.fr" }]
+keywords = ["causal inference", "functional data", "elastic shape analysis", "treatment effects"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = ["numpy>=2.0"]
+
+[project.urls]
+Repository = "https://github.com/agathe-chabassier/shape-preserving-effects"
+
+[project.optional-dependencies]
+figures = ["matplotlib>=3.7"]
+test = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["shape_preserving_effects"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+# Default rules, plus docstrings (D, Google style), type hints (ANN),
+# naming (N) and absolute imports inside the package (TID252).
+select = ["E4", "E7", "E9", "F", "D", "ANN", "N", "TID252"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.lint.pep8-naming]
+# Symbols of the paper: covariates X, outcomes Y, treatment A, curves F,
+# and the kernels K of the SRVF kernel competitor.
+ignore-names = ["X", "Y", "A", "F", "X0", "X1", "Y0", "Y1", "K_in", "Y_in", "K_cross", "K_y"]
+
+[tool.ruff.lint.per-file-ignores]
+# The checks on docstrings and names apply to the package and the examples.
+"tests/*" = ["D", "N"]
+"simulations/*" = ["D", "ANN", "N"]
